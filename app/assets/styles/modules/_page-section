@@ -1,8 +1,0 @@
-.page-section {
-  
-  @mixin clearfix;
-
-  &__title {
-    text-align: center;
-  }
-}

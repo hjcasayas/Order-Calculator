@@ -1,0 +1,12 @@
+.page-section {
+  
+  @mixin clearfix;
+  
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-style: italic;
+    color: $red;
+  }
+}

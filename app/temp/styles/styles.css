@@ -291,15 +291,81 @@ a {
   text-decoration: none;
   color: #66cccc;
 }
-/* Modules */
-.establishment {
-  height: 461px;
-}
-.establishment--odd {
-
+.u-text-align--center {
+    text-align: center;
   }
-.establishment--even {
+/* Modules */
+.btn {
+  color: #333;
+  display: inline-block;
+  padding: .4rem 1.2rem;
+  border-radius: 12px;
 
+}
+.btn--yellow {
+    background-color: #ffcc33;
+    text-align: center;
+  }
+.establishment {
+  margin-bottom: 2rem;
+  overflow: hidden;
+  background-color: #ff6666;
+
+}
+.establishment::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+.establishment--odd > div {
+    float: left;
+  }
+.establishment--even > div {
+    float: right;
+  }
+.establishment__image-container {
+    width: 66.66%;
+  }
+.establishment__image {
+    display: block;
+  }
+.establishment__info {
+    width: 33.33%;
+    padding: 1.875rem 3.125rem 0.625rem;
+    color: #fff;
+  }
+.establishment__name {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+.establishment__description {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1rem;
+  }
+.establishment__best-seller::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+.establishment__best-seller-text {
+    font-weight: 300;
+  }
+.establishment__best-seller-images {
+    margin-right: -1rem;
+    overflow: hidden;
+  }
+.establishment__best-seller-images::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+.establishment__best-seller-image {
+    width: calc((100%/3) - 1rem);
+    height: 80px;
+    background-color: #333;
+    float: left;
+    margin-right: 1rem;
   }
 .large-hero {
   position: relative;
@@ -338,7 +404,7 @@ a {
   }
 .large-hero__description {
     font-size: 1.875rem;
-    max-width: 25rem;
+    /* max-width: 25rem; */
     margin-left: auto;
     margin-right: auto;
   }
@@ -349,6 +415,10 @@ a {
   }
 .page-section__title {
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #ff6666;
   }
 .site-header {
   position: absolute;
