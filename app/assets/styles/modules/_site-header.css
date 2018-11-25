@@ -1,0 +1,48 @@
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba($black, 0.85);
+
+  @mixin clearfix;
+
+  &__site-title {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 1rem 0 1rem 3rem;
+    color: $red;
+  }
+
+  &__nav {
+    padding: 1.5rem 3rem 1.5rem 0rem;
+    display: block;
+    float: right;
+    
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: block;
+        float: left;
+        list-style-type: none;
+
+        a:link,
+        a:visited {
+         padding: .4rem .8rem; 
+        }
+
+        a:hover {
+          color: $red;
+        }
+
+      }
+    }
+
+  }
+
+
+}
