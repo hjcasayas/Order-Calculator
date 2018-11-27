@@ -1,0 +1,21 @@
+.min-list {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style-type: none;
+  }
+
+  a:link,
+  a:visited {
+    display: block;
+    text-decoration: none;
+    padding-bottom: .3rem;
+    font-weight: 300;
+  }
+
+  a:hover {
+    color: $red;
+  }
+
+}

@@ -1,0 +1,12 @@
+.row {
+  margin-right: -1rem;
+  overflow: hidden;
+}
+.one-of-four {
+  width: calc(25% - 1rem);
+  margin-right: 1rem;
+  float: left;
+  height: auto;
+  color: $white;
+  padding: 1rem;
+}
