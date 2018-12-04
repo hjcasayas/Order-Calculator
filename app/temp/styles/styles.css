@@ -282,6 +282,9 @@ template {
 body {
   font-family: 'Roboto', sans-serif;
   color: #333;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 16px;
 }
 img {
   max-width: 100%;
@@ -302,6 +305,12 @@ a {
   height: auto;
   color: #fff;
   padding: 1rem;
+}
+.col-one-of-three {
+
+}
+.col-two-of-three {
+
 }
 .u-text-align--center {
     text-align: center;
@@ -381,7 +390,7 @@ a {
   }
 .large-hero {
   position: relative;
-  max-height: 85vh;
+  height: 85vh;
   overflow: hidden;
 
 }
@@ -420,6 +429,70 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
+.menu {
+  margin-bottom: 2rem;
+  overflow: hidden;
+  float: left;
+  width: 66.66%;
+  background-color: #ff6666;
+
+}
+.menu::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+.menu--odd > div {
+    float: left;
+  }
+.menu--even > div {
+    float: right;
+  }
+.menu__image-container {
+    width: 60%;
+  }
+.menu__image {
+    display: block;
+  }
+.menu__info {
+    width: 40%;
+    padding: 1.875rem 3.125rem 0.625rem;
+    color: #333;
+  }
+.menu__name {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+.menu__description {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1rem;
+  }
+.menu__best-seller::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+.menu__best-seller-text {
+    font-weight: 300;
+  }
+.menu__best-seller-images {
+    margin-right: -1rem;
+    overflow: hidden;
+  }
+.menu__best-seller-images::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+.menu__best-seller-image {
+    width: calc((100%/3) - 1rem);
+    height: 80px;
+    background-color: #333;
+    float: left;
+    margin-right: 1rem;
+  }
 .min-list {
   padding: 0;
   margin: 0;
@@ -437,6 +510,21 @@ a {
   }
 .min-list a:hover {
     color: #ff6666;
+  }
+.orders {
+  position: absolute;
+  right: 0;
+  height: 500px;
+  width: 33.34%;
+  padding-left: 1rem;
+}
+.orders__container {
+    background-color: #66cccc;
+    padding: 0 1rem;
+  }
+.orders__price {
+    font-weight: 300;
+    font-style: italic;
   }
 .page-section::after {
     content: '';
@@ -518,6 +606,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+  position: relative;
 }
 .wrapper::after {
     content: '';

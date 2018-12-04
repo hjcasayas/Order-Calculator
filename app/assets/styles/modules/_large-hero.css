@@ -1,6 +1,6 @@
 .large-hero {
   position: relative;
-  max-height: 85vh;
+  height: 85vh;
   overflow: hidden;
 
   @mixin clearfix;
