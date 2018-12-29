@@ -4,7 +4,13 @@
   height: 500px;
   width: 33.34%;
   padding-left: 1rem;
-
+  
+  &--fixed-div{
+    position: fixed;
+    top: 0;
+    right: 31.6667px;
+  }
+  
   &__container {
     background-color: $blue;
     padding: 0 1rem;

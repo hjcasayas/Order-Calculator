@@ -1,7 +1,6 @@
 .menu {
   margin-bottom: 2rem;
   overflow: hidden;
-  float: left;
   width: 66.66%;
   background-color: $red;
 
@@ -39,6 +38,8 @@
     font-weight: 300;
     font-style: italic;
     font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: .3rem;
   }
 
   &__best-seller {

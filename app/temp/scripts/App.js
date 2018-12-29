@@ -94,19 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _RevealOnScroll = __webpack_require__(/*! ./modules/RevealOnScroll */ \"./app/assets/scripts/modules/RevealOnScroll.js\");\n\nvar _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar revealOnScroll = new _RevealOnScroll2.default();\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
-
-/***/ }),
-
-/***/ "./app/assets/scripts/modules/RevealOnScroll.js":
-/*!******************************************************!*\
-  !*** ./app/assets/scripts/modules/RevealOnScroll.js ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar RevealOnScroll = function RevealOnScroll() {\n  _classCallCheck(this, RevealOnScroll);\n};\n\nexports.default = RevealOnScroll;\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/RevealOnScroll.js?");
+eval("// import FixedOrderDiv from './modules/FixedOrderDiv';\n\n// var fixedOrderDiv = new FixedOrderDiv();\n\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
 
 /***/ })
 

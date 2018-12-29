@@ -1,3 +1,3 @@
-import RevealOnScroll from './modules/RevealOnScroll';
+// import FixedOrderDiv from './modules/FixedOrderDiv';
 
-var revealOnScroll = new RevealOnScroll();
+// var fixedOrderDiv = new FixedOrderDiv();

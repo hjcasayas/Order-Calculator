@@ -4,6 +4,7 @@
   padding: .4rem 1.2rem;
   border-radius: 12px;
 
+
   &--yellow {
     background-color: $yellow;
     text-align: center;

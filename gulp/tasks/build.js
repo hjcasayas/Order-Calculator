@@ -10,7 +10,7 @@ uglify = require('gulp-uglify'),
 browserSync = require('browser-sync').create();
 
 // TASKS
-gulp.task('build', gulp.series(deleteDistFolder, gulp.parallel(optimizeImages, copyIndex)));
+gulp.task('build', gulp.series('styles', 'scripts', deleteDistFolder, gulp.parallel(optimizeImages, copyIndex)));
 
 gulp.task('previewDist', function(){
   browserSync.init({
