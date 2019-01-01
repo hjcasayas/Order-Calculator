@@ -9,7 +9,10 @@ nested = require('postcss-nested'),
 cssImport = require('postcss-import'),
 mixins = require('postcss-mixins'),
 hexrgba = require('postcss-hexrgba'),
-webpack = require('webpack');
+webpack = require('webpack'),
+svgSprite = require('gulp-svg-sprite'),
+rename = require('gulp-rename'),
+del = require('del');
 
 // Tasks
 gulp.task('watch', function(){
@@ -27,6 +30,8 @@ gulp.task('watch', function(){
   watch('./app/*.html', browserReload);
 
 });
+
+gulp.task('sprites', gulp.series(delSprite, createSprite, copySpriteCSS));
 
 gulp.task('scripts', scripts);
 gulp.task('styles', styles);
@@ -59,6 +64,35 @@ function scripts(callback) {
     console.log(stats.toString());
     callback();
   });
+}
+
+// sprites
+var config = {
+  mode: {
+    css: {
+      render: {
+        css: {
+          template: './gulp/templates/sprite.css'
+        }
+      }
+    }
+  }
+}
+
+function createSprite() {
+  return gulp.src('./app/assets/images/icons/**/*.svg')
+    .pipe(svgSprite(config))
+    .pipe(gulp.dest('./app/temp/sprite/'));
+}
+
+function copySpriteCSS() {
+  return gulp.src('./app/temp/sprite/css/*.css')
+    .pipe(rename('_sprite.css'))
+    .pipe(gulp.dest('./app/assets/styles/modules'));
+}
+
+function delSprite() {
+ return del('./app/temp/sprite/');
 }
 
 // for html and scripts reload

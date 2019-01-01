@@ -1,7 +1,6 @@
 .orders {
   position: absolute;
   right: 0;
-  height: 500px;
   width: 33.34%;
   padding-left: 1rem;
   
@@ -14,6 +13,7 @@
   &__container {
     background-color: $blue;
     padding: 0 1rem;
+    min-height: 572px;
   }
 
   &__price {

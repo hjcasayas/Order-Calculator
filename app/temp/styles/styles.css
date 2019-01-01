@@ -316,6 +316,24 @@ a {
     text-align: center;
   }
 /* Modules */
+.icon--add {
+    width: 20px;
+    height: 20px;
+    background-image: url('/temp/sprite/css/svg/sprite.css-99979071.svg');
+    background-position: 100% 0;
+  }
+.icon--document {
+    width: 60px;
+    height: 60px;
+    background-image: url('/temp/sprite/css/svg/sprite.css-99979071.svg');
+    background-position: 0 0;
+  }
+.icon--minus {
+    width: 20px;
+    height: 4.8px;
+    background-image: url('/temp/sprite/css/svg/sprite.css-99979071.svg');
+    background-position: 100% 36.231884057971016%;
+  }
 .add-orders__price {
     margin: 0;
     margin-bottom: .6rem;
@@ -326,26 +344,56 @@ a {
     margin: 0 auto;
   }
 .add-orders__buttons {
-    background-color: #66cccc;
+    /* background-color: $yellow; */
     display: inline-block;
-    padding: .2rem .5rem;
+    padding: .5rem;
     border-radius: .5rem;
+  }
+.add-orders__number-of-orders-container {
+    display: inline-block;
+    background-color: #66cccc;
+
   }
 .add-orders__number-of-orders {
     padding: 0 1rem;
     font-weight: 700;
     font-style: bold;
     font-size: 1.1rem;
+    width: 2rem;
+    text-align: center;
   }
 .add-orders__plus {
     display: inline-block;
     width: 2rem;
-    height: 1.6rem;
-    text-align: center;
+    height: 2rem;
     border: none;
-    background-color: #ffcc33;
+    outline: none;
+    cursor: pointer;
+    background-color: #66cccc;
     border-radius: .5rem;
   }
+.add-orders__icon {
+    display: inline-block;
+    margin: 0 auto;
+    fill: #66cccc;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+  }
+.add-orders__icon:hover{
+      -webkit-transform: scale(1.1) translateY(-1px);
+              transform: scale(1.1) translateY(-1px);
+    }
+.add-orders__icon:active {
+      -webkit-transform: translateY(-.5px);
+              transform: translateY(-.5px)
+    }
+.add-orders__icon--add {
+      top: 3px;
+    }
+.add-orders__icon--minus {
+      top: -4px;
+    }
 .btn {
   color: #333;
   display: inline-block;
@@ -545,7 +593,6 @@ a {
 .orders {
   position: absolute;
   right: 0;
-  height: 500px;
   width: 33.34%;
   padding-left: 1rem;
 }
@@ -557,6 +604,7 @@ a {
 .orders__container {
     background-color: #66cccc;
     padding: 0 1rem;
+    min-height: 572px;
   }
 .orders__price {
     font-weight: 300;
