@@ -73,6 +73,21 @@ class AddOrders {
           ordersList.append(`<li class="order"><span class="order__name">${order.name}</span> (<span class="order__quantity">${order.quantity}</span>) - <span class="order__price">${order.price}</span> Pesos</li>`);
         }      
       }
+
+      let totalPrice = 0;
+      for (let order of orders) {
+        totalPrice += parseInt(order.price);
+      }
+
+      let totalPriceSpan = $('.orders__total')
+      if (!(totalPrice == 0)) {
+        console.log(totalPrice);
+        totalPriceSpan.html(`Total: ${totalPrice} Pesos`);
+        totalPriceSpan.addClass('orders__total--is-visible');
+      } else {
+        totalPriceSpan.removeClass('orders__total--is-visible');
+      }
+
     }
 
   }

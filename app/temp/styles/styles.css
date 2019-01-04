@@ -607,6 +607,12 @@ a {
     font-weight: 300;
     font-style: italic;
   }
+.orders__total {
+    display: none;
+  }
+.orders__total--is-visible {
+      display: block;
+    }
 .page-section::after {
     content: '';
     display: table;

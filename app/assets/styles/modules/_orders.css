@@ -20,4 +20,12 @@
     font-weight: 300;
     font-style: italic;
   }
+
+  &__total {
+    display: none;
+
+    &--is-visible {
+      display: block;
+    }
+  }
 }
