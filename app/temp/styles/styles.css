@@ -319,19 +319,19 @@ a {
 .icon--add {
     width: 20px;
     height: 20px;
-    background-image: url('/temp/sprite/css/svg/sprite.css-ba2c2941.svg');
+    background-image: url('../../assets/images/sprites/css/svg/sprite.css-ba2c2941.svg');
     background-position: 100% 0;
   }
 .icon--document {
     width: 60px;
     height: 60px;
-    background-image: url('/temp/sprite/css/svg/sprite.css-ba2c2941.svg');
+    background-image: url('../../assets/images/sprites/css/svg/sprite.css-ba2c2941.svg');
     background-position: 0 0;
   }
 .icon--minus {
     width: 20px;
     height: 4.8px;
-    background-image: url('/temp/sprite/css/svg/sprite.css-ba2c2941.svg');
+    background-image: url('../../assets/images/sprites/css/svg/sprite.css-ba2c2941.svg');
     background-position: 100% 36.231884057971016%;
   }
 .add-orders__price {

@@ -82,17 +82,17 @@ var config = {
 function createSprite() {
   return gulp.src('./app/assets/images/icons/**/*.svg')
     .pipe(svgSprite(config))
-    .pipe(gulp.dest('./app/temp/sprite/'));
+    .pipe(gulp.dest('./app/assets/images/sprites/'));
 }
 
 function copySpriteCSS() {
-  return gulp.src('./app/temp/sprite/css/*.css')
+  return gulp.src('./app/assets/images/sprites/css/*.css')
     .pipe(rename('_sprite.css'))
     .pipe(gulp.dest('./app/assets/styles/modules'));
 }
 
 function delSprite() {
- return del('./app/temp/sprite/');
+ return del('./app/assets/images/sprites/');
 }
 
 // for html and scripts reload

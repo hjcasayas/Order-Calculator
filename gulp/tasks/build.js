@@ -40,7 +40,7 @@ function deleteDistFolder() {
 }
 
 function optimizeImages() {
-  return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/**/*_size.jpg'])
+  return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/**/*_size.jpg', '!./app/assets/images/icons', '!./app/assets/images/icons/**/*'])
     .pipe(imagemin({
       progressive: true,
       interlaced: true,
