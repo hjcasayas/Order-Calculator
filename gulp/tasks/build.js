@@ -10,7 +10,7 @@ uglify = require('gulp-uglify'),
 browserSync = require('browser-sync').create();
 
 // TASKS
-gulp.task('build', gulp.series('styles', 'scripts', deleteDistFolder, gulp.parallel(optimizeImages, copyIndex)));
+gulp.task('build', gulp.series('styles', 'scripts', deleteDistFolder, gulp.parallel(optimizeImages, copyIndex, copyHTML)));
 
 gulp.task('previewDist', function(){
   browserSync.init({
@@ -35,8 +35,13 @@ function copyIndex() {
     .pipe(gulp.dest('./docs'));
 }
 
+function copyHTML() {
+  return gulp.src(['./app/*html', '!./app/index.html'])
+    .pipe(gulp.dest('./docs'));
+}
+
 function deleteDistFolder() {
-  return del('./docs');
+  return del(['./docs/**', '!./docs']);
 }
 
 function optimizeImages() {
