@@ -476,6 +476,8 @@ a {
   }
 .large-hero__image {
     opacity: .85;
+    width: 100vw;
+    height: auto;
   }
 .large-hero__text-content {
     position: absolute;

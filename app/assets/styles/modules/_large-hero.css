@@ -7,6 +7,8 @@
 
   &__image {
     opacity: .85;
+    width: 100vw;
+    height: auto;
   }
 
   &__text-content {
