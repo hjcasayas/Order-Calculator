@@ -537,7 +537,7 @@ a {
   }
 .menu__name {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.875rem;
     font-weight: 300;
   }
 .menu__description {
@@ -545,7 +545,7 @@ a {
     font-style: italic;
     font-size: 1rem;
     margin-top: 0;
-    margin-bottom: .3rem;
+    margin-bottom: .25rem;
   }
 .menu__best-seller::after {
     content: '';
@@ -649,6 +649,10 @@ a {
     padding: 1rem 0 1rem 3rem;
     color: #ff6666;
   }
+.site-header__site-title a {
+      color: #ff6666;
+      display: inline-block;
+    }
 .site-header__nav {
     padding: 1.7rem 3rem 1.5rem 0rem;
     display: block;
